@@ -1,0 +1,1494 @@
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ dir /a
+dir: cannot access '/a': No such file or directory
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ ls -la
+total 21
+drwxr-xr-x 1 Dell 197609   0 Jul 25 11:33 ./
+drwxr-xr-x 1 Dell 197609   0 Jul 24 21:13 ../
+drwxr-xr-x 1 Dell 197609   0 Jul 25 13:02 .git/
+drwxr-xr-x 1 Dell 197609   0 Jul 24 22:25 5189976_sakshi_upadhyay/
+drwxr-xr-x 1 Dell 197609   0 Jul 24 19:59 GIT/
+-rw-r--r-- 1 Dell 197609 164 Jul 25 11:33 README.md
+drwxr-xr-x 1 Dell 197609   0 Jul 25 11:33 SDLC/
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git add .
+error: 'SDLC' does not have a commit checked out
+fatal: updating files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ ls -la SDLC
+total 0
+drwxr-xr-x 1 Dell 197609 0 Jul 25 11:33 ./
+drwxr-xr-x 1 Dell 197609 0 Jul 25 11:33 ../
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git add .
+error: 'SDLC' does not have a commit checked out
+fatal: updating files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ ls -la SDLC
+total 56
+drwxr-xr-x 1 Dell 197609     0 Jul 25 13:07 ./
+drwxr-xr-x 1 Dell 197609     0 Jul 25 11:33 ../
+-rw-r--r-- 1 Dell 197609 55453 Jul 24 13:18 sdlc_test.png
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git status
+interactive rebase in progress; onto 8c5a75d
+Last command done (1 command done):
+   pick c5fd033 certificate
+Next commands to do (3 remaining commands):
+   pick bae18ba push
+   pick c8f2d0f initial commit
+  (use "git rebase --edit-todo" to view and edit)
+You are currently rebasing branch 'main' on '8c5a75d'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   5189976_sakshi_upadhyay
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both added:      SDLC
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   5189976_sakshi_upadhyay (new commits, modified content)
+
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git add .
+error: 'SDLC' does not have a commit checked out
+fatal: updating files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ ls -la SDLC
+total 56
+drwxr-xr-x 1 Dell 197609     0 Jul 25 13:07 ./
+drwxr-xr-x 1 Dell 197609     0 Jul 25 13:14 ../
+-rw-r--r-- 1 Dell 197609 55453 Jul 24 13:18 sdlc_test.png
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git commit -m "initial commit"
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       SDLC
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git add .
+error: 'SDLC' does not have a commit checked out
+fatal: updating files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git add SDLC
+error: 'SDLC' does not have a commit checked out
+fatal: updating files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git submodule
+fatal: no submodule mapping found in .gitmodules for path '5189976_sakshi_upadhyay'
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git submodule
+fatal: no submodule mapping found in .gitmodules for path '5189976_sakshi_upadhyay'
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git rebase --abort
+warning: unable to rmdir 'SDLC': Directory not empty
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/Dell/Desktop/Sakshi/git/.git/
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main)
+$ cd github
+bash: cd: github: No such file or directory
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main)
+$ cd /Desktop/github
+
+Dell@SACHIN MINGW64 /Desktop/github
+$ git init
+Initialized empty Git repository in C:/Users/Dell/Desktop/github/.git/
+
+Dell@SACHIN MINGW64 /Desktop/github (master)
+$ git branch main
+fatal: not a valid object name: 'master'
+
+Dell@SACHIN MINGW64 /Desktop/github (master)
+$ git remote -v
+
+Dell@SACHIN MINGW64 /Desktop/github (master)
+$ git remote add origin https://github.com/sakshiupa/5189976_sakshi_upadhyay.git
+
+Dell@SACHIN MINGW64 /Desktop/github (master)
+$ git remote -v
+origin  https://github.com/sakshiupa/5189976_sakshi_upadhyay.git (fetch)
+origin  https://github.com/sakshiupa/5189976_sakshi_upadhyay.git (push)
+
+Dell@SACHIN MINGW64 /Desktop/github (master)
+$ git checkout -b main
+Switched to a new branch 'main'
+
+Dell@SACHIN MINGW64 /Desktop/github (main)
+$ git branch
+
+Dell@SACHIN MINGW64 /Desktop/github (main)
+$ git add .
+
+Dell@SACHIN MINGW64 /Desktop/github (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   git_bash_command.txt
+        new file:   sdlc/Screenshot (994)_2 (1).png
+
+
+Dell@SACHIN MINGW64 /Desktop/github (main)
+$ git commit -m "initial commit
+> "
+
+
+
+[main (root-commit) 909f51c] initial commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 git_bash_command.txt
+ create mode 100644 sdlc/Screenshot (994)_2 (1).png
+
+Dell@SACHIN MINGW64 /Desktop/github (main)
+$
+
+Dell@SACHIN MINGW64 /Desktop/github (main)
+$
+
+Dell@SACHIN MINGW64 /Desktop/github (main)
+$
+
+Dell@SACHIN MINGW64 /Desktop/github (main)
+$ git commit -m "initial commit"
+On branch main
+nothing to commit, working tree clean
+
+Dell@SACHIN MINGW64 /Desktop/github (main)
+$ git push origin main
+To https://github.com/sakshiupa/5189976_sakshi_upadhyay.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/sakshiupa/5189976_sakshi_upadhyay.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Dell@SACHIN MINGW64 /Desktop/github (main)
+$ git pull origin main
+remote: Enumerating objects: 22, done.
+remote: Counting objects: 100% (22/22), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 22 (delta 1), reused 9 (delta 1), pack-reused 0 (from 0)
+Unpacking objects: 100% (22/22), 56.07 KiB | 34.00 KiB/s, done.
+From https://github.com/sakshiupa/5189976_sakshi_upadhyay
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+fatal: refusing to merge unrelated histories
+
+Dell@SACHIN MINGW64 /Desktop/github (main)
+$ git pull origin master --allow-unrelated-histories
+fatal: couldn't find remote ref master
+
+Dell@SACHIN MINGW64 /Desktop/github (main)
+$ git pull main --allow-unrelated-histories
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Dell@SACHIN MINGW64 /Desktop/github (main)
+$ git pull origin main --allow-unrelated-histories
+From https://github.com/sakshiupa/5189976_sakshi_upadhyay
+ * branch            main       -> FETCH_HEAD
+hint: Waiting for your editor to close the file...
+
+
+Merge made by the 'ort' strategy.
+ README.md | 4 ++++
+ SDLC      | 1 +
+ 2 files changed, 5 insertions(+)
+ create mode 100644 README.md
+ create mode 160000 SDLC
+
+Dell@SACHIN MINGW64 /Desktop/github (main)
+$ git push origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 51.21 KiB | 8.53 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/sakshiupa/5189976_sakshi_upadhyay.git
+   8c5a75d..cf63272  main -> main
+
+Dell@SACHIN MINGW64 /Desktop/github (main)
+$
+git --version
+
+Dell@SACHIN MINGW64 /
+$ git --version
+git version 2.47.0.windows.2
+
+Dell@SACHIN MINGW64 /
+$ git config -system
+error: did you mean `--system` (with two dashes)?
+
+Dell@SACHIN MINGW64 /
+$ git config --system
+error: no action specified
+
+Dell@SACHIN MINGW64 /
+$ git config
+error: no action specified
+
+Dell@SACHIN MINGW64 /
+$ git commit -m "intital version"
+fatal: not a git repository (or any of the parent directories): .git
+
+Dell@SACHIN MINGW64 /
+$ cd this pc
+bash: cd: too many arguments
+
+Dell@SACHIN MINGW64 /
+$ cd sakshi
+bash: cd: sakshi: No such file or directory
+
+Dell@SACHIN MINGW64 /
+$ cd /this pc /sakshi
+bash: cd: too many arguments
+
+Dell@SACHIN MINGW64 /
+$ cd /Desktop/Saksh
+bash: cd: /Desktop/Saksh: No such file or directory
+
+Dell@SACHIN MINGW64 /
+$ cd /Desktop/Sakshi
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi
+$ git config --system
+error: no action specified
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi
+$ git commit -m "intital version"
+fatal: not a git repository (or any of the parent directories): .git
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi
+$ git config
+error: no action specified
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi
+$ git config --system
+error: no action specified
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi
+$ git config --global user.name
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi
+$ git config --global user.name
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi
+$ mkdir<5189976_sakshi_upadhyay>
+bash: syntax error near unexpected token `newline'
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi
+$ mkdir<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>
+bash: syntax error near unexpected token `newline'
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi
+$ mkdir<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>
+bash: syntax error near unexpected token `newline'
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi
+$ git init
+Initialized empty Git repository in C:/Users/Dell/Desktop/Sakshi/.git/
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi (master)
+$ ls -ls
+total 156439
+   44 -rw-r--r-- 1 Dell 197609    43490 Mar 28  2023  1.docx
+  556 -rw-r--r-- 1 Dell 197609   567778 Aug  6  2024 '4aug text to speech.m4a'
+  152 -rw-r--r-- 1 Dell 197609   152824 Sep  7  2024 'AICTE B1 PD 1-972-726.pdf'
+ 1232 -rw-r--r-- 1 Dell 197609  1260893 Nov 15  2022  ATTRIBUTE.pptx.dbms.pptx
+    4 -rwxr-xr-x 1 Dell 197609     1010 Nov 25  2022  Dev-C++.lnk*
+   24 -rw-r--r-- 1 Dell 197609    21671 Apr 17  2023 'FAKE_NEWS DETECTION CODE.docx'
+  540 -rw-r--r-- 1 Dell 197609   549914 Aug  1  2024  FRONT.PPT.pptx
+61320 -rw-r--r-- 1 Dell 197609 62789876 Apr 14  2023  Fake.csv
+    4 drwxr-xr-x 1 Dell 197609        0 Sep 26  2024 'Gate CS'/
+   20 -rw-r--r-- 1 Dell 197609    20173 May 14  2023 'JAVA PRESENTATION (1) (2).xlsx'
+   20 -rw-r--r-- 1 Dell 197609    20151 May 14  2023 'JAVA PRESENTATION.xlsx'
+  496 -rw-r--r-- 1 Dell 197609   507340 May 22  2023 'JAVA exception.pptx'
+   20 -rw-r--r-- 1 Dell 197609    18947 Apr 23  2023  LIAR_DATASET_FINAL_CODE.docx
+  728 -rw-r--r-- 1 Dell 197609   743464 May 25  2023 'MACHINE LEARNING.pptx'
+   60 -rw-r--r-- 1 Dell 197609    58818 Aug 31  2024  MOCK_INTERVIEW_RESUME.docx
+  156 -rw-r--r-- 1 Dell 197609   157062 Aug 15  2024  MOCK_INTERVIEW_RESUME.pdf
+  296 -rw-r--r-- 1 Dell 197609   300065 Nov  8  2022 'MODULE.docx(BSU).docx'
+    0 drwxr-xr-x 1 Dell 197609        0 Mar 15  2024 'New folder'/
+    1 -rw-r--r-- 1 Dell 197609      162 Feb 11  2023 'PYTHON CODE.py'
+    0 drwxr-xr-x 1 Dell 197609        0 Jan 31  2023 'PYTHON PRACTICE'/
+  320 -rw-r--r-- 1 Dell 197609   324074 Feb 20  2023 'Payment Status.pdf'
+   32 -rw-r--r-- 1 Dell 197609    30939 Feb 20  2023 'Photos copy.jpg'
+  336 -rw-r--r-- 1 Dell 197609   340824 Aug 10  2023  RESUME-3RDYEAR.docx
+  268 -rw-r--r-- 1 Dell 197609   270562 Nov 15  2024  ReleaseNotes.html
+  128 -rw-r--r-- 1 Dell 197609   130443 Mar 27  2023 'Resume Builder � Resume.io.html.jpg'
+    4 drwxr-xr-x 1 Dell 197609        0 Mar 27  2023 'Resume Builder � Resume.io.html_files'/
+  188 -rw-r--r-- 1 Dell 197609   191518 Jul 30  2024  SAKSHI.jpg
+    1 -rw-r--r-- 1 Dell 197609      695 Jan 31  2023  SAKSHI.py
+ 5720 -rw-r--r-- 1 Dell 197609  5855332 Dec 28  2022 'SANSKRITI FINAL PYTHON ASSIGNMENT.docx'
+  340 -rw-r--r-- 1 Dell 197609   347376 Nov 24  2023 'SENTIMENT ANALYSIS FOR SOCIAL MEDIA.docx'
+  192 -rw-r--r-- 1 Dell 197609   194386 Nov 24  2023  STEMMERS.docx
+  292 -rw-r--r-- 1 Dell 197609   298542 Nov 15  2022 'Sakshi Upadhyay COMMUNICATION PPT.pptx'
+ 1088 -rw-r--r-- 1 Dell 197609  1113007 Jun 24  2023  SampleSuperstore.csv
+52328 -rw-r--r-- 1 Dell 197609 53582940 Apr 14  2023  True.csv
+    1 -rw-r--r-- 1 Dell 197609      234 Mar 29  2023  Untitled1.cpp
+ 1880 -rwxr-xr-x 1 Dell 197609  1921630 Mar 29  2023  Untitled1.exe*
+  396 -rw-r--r-- 1 Dell 197609   404554 Nov  6  2022  action.htm
+  820 -rw-r--r-- 1 Dell 197609   836364 Jan 17  2024  adarsh.docx
+   56 -rw-r--r-- 1 Dell 197609    55604 Jun  6  2023  amity_resume.docx
+    4 -rw-r--r-- 1 Dell 197609     1485 Mar 30  2023 'c++ code.txt'
+ 2120 -rw-r--r-- 1 Dell 197609  2170467 Jul  9  2024  class_8.pptx
+    4 drwxr-xr-x 1 Dell 197609        0 Aug 11  2024  code/
+   20 -rw-r--r-- 1 Dell 197609    18645 Dec 18  2024  code_file_rag_multilingual_model.docx
+  100 -rw-r--r-- 1 Dell 197609   102393 Aug  8  2024  code_file_rag_multilingual_model.pdf
+  144 -rw-r--r-- 1 Dell 197609   143504 Mar 30  2023 'cover letter.docx'
+  180 -rw-r--r-- 1 Dell 197609   181664 Jun 24  2023 'current work fake_news.docx'
+    0 drwxr-xr-x 1 Dell 197609        0 Jul  8  2024  django/
+    8 -rw-r--r-- 1 Dell 197609     7680 Mar 15  2024 'download (1).jpg'
+   12 -rw-r--r-- 1 Dell 197609    11537 Mar 27  2023 'download (1).png'
+   16 -rw-r--r-- 1 Dell 197609    16171 Apr 19  2023 'download (2).png'
+    8 -rw-r--r-- 1 Dell 197609     7958 Nov 14  2022  download.jpg
+   24 -rw-r--r-- 1 Dell 197609    24069 Mar 27  2023  download.png
+  148 -rw-r--r-- 1 Dell 197609   148115 Feb 20  2023  ewedsefsec.jpg
+ 5876 -rw-r--r-- 1 Dell 197609  6016780 Dec 28  2022 'final file of python.docx'
+ 1996 -rw-r--r-- 1 Dell 197609  2042121 Aug 25  2023  final_complete_ensemble_code.docx
+  156 -rw-r--r-- 1 Dell 197609   156847 Dec 21  2024  final_sip_clg.pptx
+    0 drwxr-xr-x 1 Dell 197609        0 Jul 24 18:05  git/
+   24 -rw-r--r-- 1 Dell 197609    23184 Jul 10  2023  hybrid_model_cnn_bi-lstm_nh-d.docx
+   16 -rw-r--r-- 1 Dell 197609    14678 Apr 25  2023  import.docx
+ 1304 -rw-r--r-- 1 Dell 197609  1332324 May  4  2023 'input-output and interrupt.pptx'
+ 1308 -rw-r--r-- 1 Dell 197609  1339262 May  4  2023 'input-output and interrupt.pptx FINAL.pptx'
+   16 -rw-r--r-- 1 Dell 197609    15696 Apr 21  2023  lair_dataset.docx
+ 2496 -rw-r--r-- 1 Dell 197609  2555260 Apr 24  2023  liar.full.dataset.csv
+    1 -rw-r--r-- 1 Dell 197609      223 Mar 30  2023  loops.cpp
+ 1880 -rwxr-xr-x 1 Dell 197609  1921118 Mar 30  2023  loops.exe*
+  160 -rw-r--r-- 1 Dell 197609   161949 Jul  3  2023  lr_svm_rf_code.docx
+  236 -rw-r--r-- 1 Dell 197609   239455 Jun 18 23:59  major_project.pptx
+    0 drwxr-xr-x 1 Dell 197609        0 Jan 31  2023 'oracle 10g Express Edition'/
+    8 -rw-r--r-- 1 Dell 197609     4824 Dec 13  2022 'python questions.txt'
+    4 -rw-r--r-- 1 Dell 197609     1002 Mar  1  2024  python_notes.txt
+   92 -rw-r--r-- 1 Dell 197609    91142 Apr 19  2023 'sakshi resume.png'
+  516 -rw-r--r-- 1 Dell 197609   528254 Dec  4  2023  sakshi_clg_sip.pptx
+   72 -rw-r--r-- 1 Dell 197609    72893 Dec  4  2023  sanskriti_clg_sip.pptx
+  236 -rw-r--r-- 1 Dell 197609   239455 Jun 18 23:59  sip-2_7_sem.pptx
+ 1612 -rw-r--r-- 1 Dell 197609  1647616 Dec  3  2023  sip_college.ppt
+ 2496 -rw-r--r-- 1 Dell 197609  2555070 Oct 18  2023  sip_ibm.docx
+ 1880 -rw-r--r-- 1 Dell 197609  1921297 Jul 31  2024  superstore_internship_project.pptx
+ 1144 -rw-r--r-- 1 Dell 197609  1170063 Apr 14  2023  train.csv
+    4 drwxr-xr-x 1 Dell 197609        0 Oct 16  2023  website/
+   24 -rw-r--r-- 1 Dell 197609    23349 Aug 26  2023 'without pre-deep learning.docx'
+   28 -rw-r--r-- 1 Dell 197609    26415 Aug 28  2023  without_preposessing.docx
+    1 -rw-r--r-- 1 Dell 197609      162 Aug 14  2024 '~$CK_INTERVIEW_RESUME.docx'
+    1 -rw-r--r-- 1 Dell 197609      162 Aug 21  2023 '~$KE_NEWS DETECTION CODE.docx'
+    1 -rw-r--r-- 1 Dell 197609      165 Dec  2  2023 '~$superstore_internship_project.pptx'
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi (master)
+$ ls -la
+total 156475
+drwxr-xr-x 1 Dell 197609        0 Jul 24 18:21  ./
+drwxr-xr-x 1 Dell 197609        0 Jul 24 18:06  ../
+drwxr-xr-x 1 Dell 197609        0 Jul 24 18:21  .git/
+-rw-r--r-- 1 Dell 197609    43490 Mar 28  2023  1.docx
+-rw-r--r-- 1 Dell 197609   567778 Aug  6  2024 '4aug text to speech.m4a'
+-rw-r--r-- 1 Dell 197609   152824 Sep  7  2024 'AICTE B1 PD 1-972-726.pdf'
+-rw-r--r-- 1 Dell 197609  1260893 Nov 15  2022  ATTRIBUTE.pptx.dbms.pptx
+-rwxr-xr-x 1 Dell 197609     1010 Nov 25  2022  Dev-C++.lnk*
+-rw-r--r-- 1 Dell 197609    21671 Apr 17  2023 'FAKE_NEWS DETECTION CODE.docx'
+-rw-r--r-- 1 Dell 197609   549914 Aug  1  2024  FRONT.PPT.pptx
+-rw-r--r-- 1 Dell 197609 62789876 Apr 14  2023  Fake.csv
+drwxr-xr-x 1 Dell 197609        0 Sep 26  2024 'Gate CS'/
+-rw-r--r-- 1 Dell 197609    20173 May 14  2023 'JAVA PRESENTATION (1) (2).xlsx'
+-rw-r--r-- 1 Dell 197609    20151 May 14  2023 'JAVA PRESENTATION.xlsx'
+-rw-r--r-- 1 Dell 197609   507340 May 22  2023 'JAVA exception.pptx'
+-rw-r--r-- 1 Dell 197609    18947 Apr 23  2023  LIAR_DATASET_FINAL_CODE.docx
+-rw-r--r-- 1 Dell 197609   743464 May 25  2023 'MACHINE LEARNING.pptx'
+-rw-r--r-- 1 Dell 197609    58818 Aug 31  2024  MOCK_INTERVIEW_RESUME.docx
+-rw-r--r-- 1 Dell 197609   157062 Aug 15  2024  MOCK_INTERVIEW_RESUME.pdf
+-rw-r--r-- 1 Dell 197609   300065 Nov  8  2022 'MODULE.docx(BSU).docx'
+drwxr-xr-x 1 Dell 197609        0 Mar 15  2024 'New folder'/
+-rw-r--r-- 1 Dell 197609      162 Feb 11  2023 'PYTHON CODE.py'
+drwxr-xr-x 1 Dell 197609        0 Jan 31  2023 'PYTHON PRACTICE'/
+-rw-r--r-- 1 Dell 197609   324074 Feb 20  2023 'Payment Status.pdf'
+-rw-r--r-- 1 Dell 197609    30939 Feb 20  2023 'Photos copy.jpg'
+-rw-r--r-- 1 Dell 197609   340824 Aug 10  2023  RESUME-3RDYEAR.docx
+-rw-r--r-- 1 Dell 197609   270562 Nov 15  2024  ReleaseNotes.html
+-rw-r--r-- 1 Dell 197609   130443 Mar 27  2023 'Resume Builder � Resume.io.html.jpg'
+drwxr-xr-x 1 Dell 197609        0 Mar 27  2023 'Resume Builder � Resume.io.html_files'/
+-rw-r--r-- 1 Dell 197609   191518 Jul 30  2024  SAKSHI.jpg
+-rw-r--r-- 1 Dell 197609      695 Jan 31  2023  SAKSHI.py
+-rw-r--r-- 1 Dell 197609  5855332 Dec 28  2022 'SANSKRITI FINAL PYTHON ASSIGNMENT.docx'
+-rw-r--r-- 1 Dell 197609   347376 Nov 24  2023 'SENTIMENT ANALYSIS FOR SOCIAL MEDIA.docx'
+-rw-r--r-- 1 Dell 197609   194386 Nov 24  2023  STEMMERS.docx
+-rw-r--r-- 1 Dell 197609   298542 Nov 15  2022 'Sakshi Upadhyay COMMUNICATION PPT.pptx'
+-rw-r--r-- 1 Dell 197609  1113007 Jun 24  2023  SampleSuperstore.csv
+-rw-r--r-- 1 Dell 197609 53582940 Apr 14  2023  True.csv
+-rw-r--r-- 1 Dell 197609      234 Mar 29  2023  Untitled1.cpp
+-rwxr-xr-x 1 Dell 197609  1921630 Mar 29  2023  Untitled1.exe*
+-rw-r--r-- 1 Dell 197609   404554 Nov  6  2022  action.htm
+-rw-r--r-- 1 Dell 197609   836364 Jan 17  2024  adarsh.docx
+-rw-r--r-- 1 Dell 197609    55604 Jun  6  2023  amity_resume.docx
+-rw-r--r-- 1 Dell 197609     1485 Mar 30  2023 'c++ code.txt'
+-rw-r--r-- 1 Dell 197609  2170467 Jul  9  2024  class_8.pptx
+drwxr-xr-x 1 Dell 197609        0 Aug 11  2024  code/
+-rw-r--r-- 1 Dell 197609    18645 Dec 18  2024  code_file_rag_multilingual_model.docx
+-rw-r--r-- 1 Dell 197609   102393 Aug  8  2024  code_file_rag_multilingual_model.pdf
+-rw-r--r-- 1 Dell 197609   143504 Mar 30  2023 'cover letter.docx'
+-rw-r--r-- 1 Dell 197609   181664 Jun 24  2023 'current work fake_news.docx'
+drwxr-xr-x 1 Dell 197609        0 Jul  8  2024  django/
+-rw-r--r-- 1 Dell 197609     7680 Mar 15  2024 'download (1).jpg'
+-rw-r--r-- 1 Dell 197609    11537 Mar 27  2023 'download (1).png'
+-rw-r--r-- 1 Dell 197609    16171 Apr 19  2023 'download (2).png'
+-rw-r--r-- 1 Dell 197609     7958 Nov 14  2022  download.jpg
+-rw-r--r-- 1 Dell 197609    24069 Mar 27  2023  download.png
+-rw-r--r-- 1 Dell 197609   148115 Feb 20  2023  ewedsefsec.jpg
+-rw-r--r-- 1 Dell 197609  6016780 Dec 28  2022 'final file of python.docx'
+-rw-r--r-- 1 Dell 197609  2042121 Aug 25  2023  final_complete_ensemble_code.docx
+-rw-r--r-- 1 Dell 197609   156847 Dec 21  2024  final_sip_clg.pptx
+drwxr-xr-x 1 Dell 197609        0 Jul 24 18:05  git/
+-rw-r--r-- 1 Dell 197609    23184 Jul 10  2023  hybrid_model_cnn_bi-lstm_nh-d.docx
+-rw-r--r-- 1 Dell 197609    14678 Apr 25  2023  import.docx
+-rw-r--r-- 1 Dell 197609  1332324 May  4  2023 'input-output and interrupt.pptx'
+-rw-r--r-- 1 Dell 197609  1339262 May  4  2023 'input-output and interrupt.pptx FINAL.pptx'
+-rw-r--r-- 1 Dell 197609    15696 Apr 21  2023  lair_dataset.docx
+-rw-r--r-- 1 Dell 197609  2555260 Apr 24  2023  liar.full.dataset.csv
+-rw-r--r-- 1 Dell 197609      223 Mar 30  2023  loops.cpp
+-rwxr-xr-x 1 Dell 197609  1921118 Mar 30  2023  loops.exe*
+-rw-r--r-- 1 Dell 197609   161949 Jul  3  2023  lr_svm_rf_code.docx
+-rw-r--r-- 1 Dell 197609   239455 Jun 18 23:59  major_project.pptx
+drwxr-xr-x 1 Dell 197609        0 Jan 31  2023 'oracle 10g Express Edition'/
+-rw-r--r-- 1 Dell 197609     4824 Dec 13  2022 'python questions.txt'
+-rw-r--r-- 1 Dell 197609     1002 Mar  1  2024  python_notes.txt
+-rw-r--r-- 1 Dell 197609    91142 Apr 19  2023 'sakshi resume.png'
+-rw-r--r-- 1 Dell 197609   528254 Dec  4  2023  sakshi_clg_sip.pptx
+-rw-r--r-- 1 Dell 197609    72893 Dec  4  2023  sanskriti_clg_sip.pptx
+-rw-r--r-- 1 Dell 197609   239455 Jun 18 23:59  sip-2_7_sem.pptx
+-rw-r--r-- 1 Dell 197609  1647616 Dec  3  2023  sip_college.ppt
+-rw-r--r-- 1 Dell 197609  2555070 Oct 18  2023  sip_ibm.docx
+-rw-r--r-- 1 Dell 197609  1921297 Jul 31  2024  superstore_internship_project.pptx
+-rw-r--r-- 1 Dell 197609  1170063 Apr 14  2023  train.csv
+drwxr-xr-x 1 Dell 197609        0 Oct 16  2023  website/
+-rw-r--r-- 1 Dell 197609    23349 Aug 26  2023 'without pre-deep learning.docx'
+-rw-r--r-- 1 Dell 197609    26415 Aug 28  2023  without_preposessing.docx
+-rw-r--r-- 1 Dell 197609      162 Aug 14  2024 '~$CK_INTERVIEW_RESUME.docx'
+-rw-r--r-- 1 Dell 197609      162 Aug 21  2023 '~$KE_NEWS DETECTION CODE.docx'
+-rw-r--r-- 1 Dell 197609      165 Dec  2  2023 '~$superstore_internship_project.pptx'
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1.docx
+        4aug text to speech.m4a
+        AICTE B1 PD 1-972-726.pdf
+        ATTRIBUTE.pptx.dbms.pptx
+        Dev-C++.lnk
+        FAKE_NEWS DETECTION CODE.docx
+        FRONT.PPT.pptx
+        Fake.csv
+        Gate CS/
+        JAVA PRESENTATION (1) (2).xlsx
+        JAVA PRESENTATION.xlsx
+        JAVA exception.pptx
+        LIAR_DATASET_FINAL_CODE.docx
+        MACHINE LEARNING.pptx
+        MOCK_INTERVIEW_RESUME.docx
+        MOCK_INTERVIEW_RESUME.pdf
+        MODULE.docx(BSU).docx
+        PYTHON CODE.py
+        PYTHON PRACTICE/
+        Payment Status.pdf
+        Photos copy.jpg
+        RESUME-3RDYEAR.docx
+        ReleaseNotes.html
+        "Resume Builder \302\267 Resume.io.html.jpg"
+        "Resume Builder \302\267 Resume.io.html_files/"
+        SAKSHI.jpg
+        SAKSHI.py
+        SANSKRITI FINAL PYTHON ASSIGNMENT.docx
+        SENTIMENT ANALYSIS FOR SOCIAL MEDIA.docx
+        STEMMERS.docx
+        Sakshi Upadhyay COMMUNICATION PPT.pptx
+        SampleSuperstore.csv
+        True.csv
+        Untitled1.cpp
+        Untitled1.exe
+        action.htm
+        adarsh.docx
+        amity_resume.docx
+        c++ code.txt
+        class_8.pptx
+        code/
+        code_file_rag_multilingual_model.docx
+        code_file_rag_multilingual_model.pdf
+        cover letter.docx
+        current work fake_news.docx
+        django/
+        download (1).jpg
+        download (1).png
+        download (2).png
+        download.jpg
+        download.png
+        ewedsefsec.jpg
+        final file of python.docx
+        final_complete_ensemble_code.docx
+        final_sip_clg.pptx
+        hybrid_model_cnn_bi-lstm_nh-d.docx
+        import.docx
+        input-output and interrupt.pptx
+        input-output and interrupt.pptx FINAL.pptx
+        lair_dataset.docx
+        liar.full.dataset.csv
+        loops.cpp
+        loops.exe
+        lr_svm_rf_code.docx
+        major_project.pptx
+        oracle 10g Express Edition/
+        python questions.txt
+        python_notes.txt
+        sakshi resume.png
+        sakshi_clg_sip.pptx
+        sanskriti_clg_sip.pptx
+        sip-2_7_sem.pptx
+        sip_college.ppt
+        sip_ibm.docx
+        superstore_internship_project.pptx
+        train.csv
+        website/
+        without pre-deep learning.docx
+        without_preposessing.docx
+        ~$CK_INTERVIEW_RESUME.docx
+        ~$KE_NEWS DETECTION CODE.docx
+        ~$superstore_internship_project.pptx
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi (master)
+$ cd /Desktop/Sakshi/git
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ mkdir<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>
+bash: syntax error near unexpected token `newline'
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git init
+Initialized empty Git repository in C:/Users/Dell/Desktop/Sakshi/git/.git/
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ ls -la
+total 16
+drwxr-xr-x 1 Dell 197609 0 Jul 24 18:25 ./
+drwxr-xr-x 1 Dell 197609 0 Jul 24 18:21 ../
+drwxr-xr-x 1 Dell 197609 0 Jul 24 18:25 .git/
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ ls -lrt
+total 0
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git init SDLC
+Initialized empty Git repository in C:/Users/Dell/Desktop/Sakshi/git/SDLC/.git/
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ ls -lrt
+total 0
+drwxr-xr-x 1 Dell 197609 0 Jul 24 18:26 SDLC/
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ ls -la
+total 20
+drwxr-xr-x 1 Dell 197609 0 Jul 24 18:26 ./
+drwxr-xr-x 1 Dell 197609 0 Jul 24 18:21 ../
+drwxr-xr-x 1 Dell 197609 0 Jul 24 18:25 .git/
+drwxr-xr-x 1 Dell 197609 0 Jul 24 18:26 SDLC/
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config advice.addEmptyPathspec false"
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git init Git
+Initialized empty Git repository in C:/Users/Dell/Desktop/Sakshi/git/Git/.git/
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git commit -m
+error: switch `m' requires a value
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git commit -m "initial version"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Dell@SACHIN.(none)')
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git/
+        SDLC/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git remote origin ^[[200~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
+error: unknown subcommand: `origin'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git remote origin 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
+error: unknown subcommand: `origin'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git remote add origin 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
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add .
+error: 'Git/' does not have a commit checked out
+fatal: adding files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add .
+error: 'Git/' does not have a commit checked out
+fatal: adding files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git commit -m
+error: switch `m' requires a value
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add .
+error: 'Git/' does not have a commit checked out
+fatal: adding files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git commit -m "push"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Dell@SACHIN.(none)')
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git config --global user.email "s.upadhyay1607@gmail.com"
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git config --global user.name "sakshi"
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git commit -m "push"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Git/
+        SDLC/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add .
+error: 'Git/' does not have a commit checked out
+fatal: adding files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config advice.addEmptyPathspec false"
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add .
+error: 'Git/' does not have a commit checked out
+fatal: adding files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to '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'
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git remote origin https://github.com/sakshiupa/5189976_sakshi_upadhyay
+error: unknown subcommand: `origin'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git remote add origin https://github.com/sakshiupa/5189976_sakshi_upadhyay
+error: remote origin already exists.
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add .
+error: 'Git/' does not have a commit checked out
+fatal: adding files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git remote add origin https://github.com/sakshiupa/5189976_sakshi_upadhyay.git
+error: remote origin already exists.
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add .
+error: 'Git/' does not have a commit checked out
+fatal: adding files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git clone https://github.com/sakshiupa/5189976_sakshi_upadhyay.git
+Cloning into '5189976_sakshi_upadhyay'...
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 13 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (13/13), 4.57 KiB | 222.00 KiB/s, done.
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        5189976_sakshi_upadhyay/
+        Git/
+        SDLC/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add .
+warning: adding embedded git repository: 5189976_sakshi_upadhyay
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> 5189976_sakshi_upadhyay
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached 5189976_sakshi_upadhyay
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+error: 'Git/' does not have a commit checked out
+fatal: adding files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add SDLC
+error: 'SDLC/' does not have a commit checked out
+fatal: adding files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        5189976_sakshi_upadhyay/
+        Git/
+        SDLC/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add SDLC
+fatal: pathspec 'SDLC' did not match any files
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ cd Desktop/Sakshi/git/5189976_sakshi_upadhyay
+bash: cd: Desktop/Sakshi/git/5189976_sakshi_upadhyay: No such file or directory
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ cd Desktop/Sakshi/git/5189976_sakshi_upadhyay
+bash: cd: Desktop/Sakshi/git/5189976_sakshi_upadhyay: No such file or directory
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add .
+warning: adding embedded git repository: 5189976_sakshi_upadhyay
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> 5189976_sakshi_upadhyay
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached 5189976_sakshi_upadhyay
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+error: 'SDLC/' does not have a commit checked out
+fatal: adding files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ ^C
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add .
+warning: adding embedded git repository: 5189976_sakshi_upadhyay
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> 5189976_sakshi_upadhyay
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached 5189976_sakshi_upadhyay
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+warning: adding embedded git repository: SDLC
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git commit -m "certificate"
+[master (root-commit) c5fd033] certificate
+ 2 files changed, 2 insertions(+)
+ create mode 160000 5189976_sakshi_upadhyay
+ create mode 160000 SDLC
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   5189976_sakshi_upadhyay (untracked content)
+        modified:   SDLC (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add SDLC
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   5189976_sakshi_upadhyay (untracked content)
+        modified:   SDLC (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   SDLC (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add .
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   SDLC (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add .
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ ls -lrt
+total 0
+drwxr-xr-x 1 Dell 197609 0 Jul 24 19:57 5189976_sakshi_upadhyay/
+drwxr-xr-x 1 Dell 197609 0 Jul 24 19:58 SDLC/
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ ls -lrt
+total 0
+drwxr-xr-x 1 Dell 197609 0 Jul 24 19:57 5189976_sakshi_upadhyay/
+drwxr-xr-x 1 Dell 197609 0 Jul 24 19:58 SDLC/
+drwxr-xr-x 1 Dell 197609 0 Jul 24 19:59 GIT/
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git log --oneline
+c5fd033 (HEAD -> master) certificate
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git remote add origin https://github.com/sakshiupa/5189976_sakshi_upadhyay.git
+error: remote origin already exists.
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git remote add origin https://github.com/sakshiupa/5189976_sakshi_upadhyay.git
+error: remote origin already exists.
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git remote -v
+origin  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 (fetch)
+origin  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 (push)
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git push master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git push origin master
+fatal: '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' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git push origin master Username for 'https://github.com': sakshi
+fatal: invalid refspec 'https://github.com:'
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git push origin master Username for '^C
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git push origin master Username for '
+
+https://github.com/sakshiupa/5189976_sakshi_upadhyay.git':
+5189976_sakshi_upadhyay
+fatal: invalid refspec '
+
+https://github.com/sakshiupa/5189976_sakshi_upadhyay.git:'
+bash: 5189976_sakshi_upadhyay: command not found
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git push origin master
+fatal: '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' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add .
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ ls -lrs
+total 0
+0 drwxr-xr-x 1 Dell 197609 0 Jul 24 19:58 SDLC/
+0 drwxr-xr-x 1 Dell 197609 0 Jul 24 19:59 GIT/
+0 drwxr-xr-x 1 Dell 197609 0 Jul 24 19:57 5189976_sakshi_upadhyay/
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git push <remote> --SDLC
+bash: remote: No such file or directory
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ ls -lrs
+total 0
+0 drwxr-xr-x 1 Dell 197609 0 Jul 24 19:58 SDLC/
+0 drwxr-xr-x 1 Dell 197609 0 Jul 24 19:59 GIT/
+0 drwxr-xr-x 1 Dell 197609 0 Jul 24 19:57 5189976_sakshi_upadhyay/
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git push -u <SDLC>
+bash: syntax error near unexpected token `newline'
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git push -u <SDLC>
+bash: syntax error near unexpected token `newline'
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ cd C:\Users\Dell\Desktop\Sakshi\git
+bash: cd: C:UsersDellDesktopSakshigit: No such file or directory
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ cd "C:\Users\Dell\Desktop\Sakshi\git"
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ cd "C:\Users\Dell\Desktop\Sakshi\git"
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Dell/Desktop/Sakshi/git/.git/
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add .
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ ls -lrs
+total 0
+0 drwxr-xr-x 1 Dell 197609 0 Jul 24 19:58 SDLC/
+0 drwxr-xr-x 1 Dell 197609 0 Jul 24 19:59 GIT/
+0 drwxr-xr-x 1 Dell 197609 0 Jul 24 19:57 5189976_sakshi_upadhyay/
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git commit -m "certificate "
+On branch master
+nothing to commit, working tree clean
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ cd "C:\Users\Dell\Desktop\Sakshi\git\SDLC"
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Dell/Desktop/Sakshi/git/SDLC/.git/
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC (master)
+$ git add .
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC (master)
+$ ls -lrs
+total 56
+56 -rw-r--r-- 1 Dell 197609 55453 Jul 24 13:18 'Screenshot (994)_2.png'
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC (master)
+$ git commit -m "certificate "
+On branch master
+nothing to commit, working tree clean
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC (master)
+$ ^C
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC (master)
+$ git remote add origin https://github.com/sakshiupa/5189976_sakshi_upadhyay.git
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC (master)
+$ git branch -M main
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC (main)
+$ git push -u origin main
+To https://github.com/sakshiupa/5189976_sakshi_upadhyay.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/sakshiupa/5189976_sakshi_upadhyay.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC (main)
+$ ^C
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC (main)
+$ git push -u main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC (main)
+$ git push -u Main
+fatal: 'Main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC (main)
+$Cloning into '5189976_sakshi_upadhyay'...189976_sakshi_upadhyay.git
+                                                            remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 13 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (13/13), 4.57 KiB | 1.52 MiB/s, done.
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC (main)
+$ git clone https://github.com/sakshiupa/5189976_sakshi_upadhyay.git
+fatal: destination path '5189976_sakshi_upadhyay' already exists and is not an empty directory.
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC (main)
+$ C:\Users\Dell\Desktop\Sakshi\git\sdlc\
+bash: C:UsersDellDesktopSakshigitsdlc: command not found
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC (main)
+$ cd 5189976_sakshi_upadhyay
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC/5189976_sakshi_upadhyay (main)
+$ git add .
+git commit -m "Added SDLC project files"
+git push origin main
+[main d16fa0b] Added SDLC project files
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Screenshot (994)_2.png
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 50.85 KiB | 10.17 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/sakshiupa/5189976_sakshi_upadhyay.git
+   83869dd..d16fa0b  main -> main
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC/5189976_sakshi_upadhyay (main)
+$ git commit -m "PUSH"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC/5189976_sakshi_upadhyay (main)
+$ git add .
+git commit -m "push"
+git push origin main
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Everything up-to-date
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC/5189976_sakshi_upadhyay (main)
+$ cd "C:\Users\Dell\Desktop\Sakshi\git"
+git clone https://github.com/sakshiupa/5189976_sakshi_upadhyay.git
+fatal: destination path '5189976_sakshi_upadhyay' already exists and is not an empty directory.
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ xcopy "C:\Users\Dell\Desktop\Sakshi\git\sdlc" "C:\Users\Dell\Desktop\Sakshi\git\5189976_sakshi_upadhyay\sdlc" /E /I /H
+bash: xcopy: command not found
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ cd "C:\Users\Dell\Desktop\Sakshi\git\SDLC"                                      git add sdlc
+git commit -m "push"
+git push origin main
+fatal: pathspec 'sdlc' did not match any files
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        5189976_sakshi_upadhyay/
+
+nothing added to commit but untracked files present (use "git add" to track)
+To https://github.com/sakshiupa/5189976_sakshi_upadhyay.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/sakshiupa/5189976_sakshi_upadhyay.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/SDLC (main)
+$ cd "C:\Users\Dell\Desktop\Sakshi\git"
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ cd "C:\Users\Dell\Desktop\Sakshi\git"
+git clone https://github.com/sakshiupa/5189976_sakshi_upadhyay.git
+fatal: destination path '5189976_sakshi_upadhyay' already exists and is not an empty directory.
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ cd git
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/git (master)
+$ git add sdlc
+git commit -m "Added SDLC folder"
+git push origin main
+fatal: pathspec 'sdlc' did not match any files
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   ../SDLC (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+error: src refspec main does not match any
+error: failed to push some refs to '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'
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/git (master)
+$ ^C
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/git (master)
+$ git add sdlc
+fatal: pathspec 'sdlc' did not match any files
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/git (master)
+$ git add SDLC
+fatal: pathspec 'SDLC' did not match any files
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/git (master)
+$ git add SDLC
+fatal: pathspec 'SDLC' did not match any files
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git/git (master)
+$ cd "C:\Users\Dell\Desktop\Sakshi\git"
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add SDLC
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git commit -m "push"
+[master bae18ba] push
+ 1 file changed, 1 deletion(-)
+ delete mode 160000 SDLC
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to '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'
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ ^C
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to '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'
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (master)
+$ git add sdlc
+fatal: pathspec 'sdlc' did not match any files
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/Dell/Desktop/Sakshi/git/.git/
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git git branch main
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git remote -v
+origin  https://github.com/sakshiupa/5189976_sakshi_upadhyay.git (fetch)
+origin  https://github.com/sakshiupa/5189976_sakshi_upadhyay.git (push)
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git checkout -b main
+fatal: a branch named 'main' already exists
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git branch
+* (no branch, rebasing main)
+  main
+  name
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git branch
+* (no branch, rebasing main)
+  main
+  name
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git add .
+error: 'SDLC' does not have a commit checked out
+fatal: updating files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git add .
+error: 'SDLC' does not have a commit checked out
+fatal: updating files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git add .
+error: 'SDLC' does not have a commit checked out
+fatal: updating files failed
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$ git status
+interactive rebase in progress; onto 8c5a75d
+Last command done (1 command done):
+   pick c5fd033 certificate
+Next commands to do (3 remaining commands):
+   pick bae18ba push
+   pick c8f2d0f initial commit
+  (use "git rebase --edit-todo" to view and edit)
+You are currently rebasing branch 'main' on '8c5a75d'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   5189976_sakshi_upadhyay
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both added:      SDLC
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   5189976_sakshi_upadhyay (new commits, modified content)
+
+
+Dell@SACHIN MINGW64 /Desktop/Sakshi/git (main|REBASE 1/4)
+$
+
